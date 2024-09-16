@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option java_package = "com.kolaysoft.grpcservice";
+option java_outer_classname = "FileServiceProto";
+option java_multiple_files = true;
+
+
+service FileService {
+    rpc WriteJsonToFile (JsonRequest) returns (FileResponse);
+    rpc UploadFile (stream FileRequest) returns (FileResponse);
+}
+
+message JsonRequest {
+    string json_data = 1;
+}
+
+message FileRequest {
+    bytes file_chunk = 1;
+}
+
+message FileResponse {
+    string message = 1;
+}
