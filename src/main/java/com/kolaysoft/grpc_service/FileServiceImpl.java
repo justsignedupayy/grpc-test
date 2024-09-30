@@ -1,9 +1,9 @@
 package com.kolaysoft.grpc_service;
 
-import com.kolaysoft.grpcservice.FileRequest;
-import com.kolaysoft.grpcservice.FileResponse;
-import com.kolaysoft.grpcservice.FileServiceGrpc;
-import com.kolaysoft.grpcservice.JsonRequest;
+import com.kolaysoft.grpc_service.FileRequest;
+import com.kolaysoft.grpc_service.FileResponse;
+import com.kolaysoft.grpc_service.FileServiceGrpc;
+import com.kolaysoft.grpc_service.JsonRequest;
 import io.grpc.stub.StreamObserver;
 
 import java.io.FileOutputStream;
